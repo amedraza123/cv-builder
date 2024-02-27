@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css2?family=Kumbh+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap);
+@import './variables';
+
+body {
+    background-color: $color-black;
+}
+
+*::selection {
+    background-color: $primaryColor;
+    color: $color-black;
+}
+
+#root {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 'cvForm cvPreview';
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+
+    color: white;
+    font-family: Kumbh Sans, sans-serif;
+}
+
+@media (max-width: 1340px) {
+    #root {
+        grid-template: repeat(2, auto) / auto;
+        grid-template-areas: 'cvForm'
+                             'cvPreview';
+    }
+
+    .cvForm {
+        width: min(550px, 86vw);
+    }
+
+    .cvPreview {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 860px) {
+    .cvPreview {
+        transform: scale(0.8);
+        margin-top: -70px;
+        margin-bottom: -85px;
+    }
+}
+
+@media (max-width: 690px) {
+    .cvPreview {
+        transform: scale(0.65);
+        margin-top: -160px;
+        margin-bottom: -180px;
+    }
+}
+
+@media (max-width: 560px) {
+    button span {
+        display: none;
+    }
+
+    button img {
+        padding: 0 6px 0 6px;
+    }
+
+    .cvPreview {
+        transform: scale(0.55);
+        margin-top: -220px;
+        margin-bottom: -240px;
+    }
+}
+
+@media (max-width: 490px) {
+    .cvPreview {
+        transform: scale(0.43);
+        margin-top: -280px;
+        margin-bottom: -310px;
+    }
+}

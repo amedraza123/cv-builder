@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css2?family=Alfa+Slab+One:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap);
+.cvPreview {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  height: 29.63cm;
+  width: 21cm;
+  padding: 15px 75px 0 85px;
+  background: linear-gradient(124deg, rgb(92, 54, 13) 5%, rgb(0, 0, 0) 29%, rgb(0, 0, 0) 73%, rgb(92, 54, 13) 94%);
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  box-shadow: 0px 5px 15px rgb(92, 54, 13), 0px -5px 30px rgb(92, 54, 13);
+  grid-area: cvPreview;
+}
+.cvPreview .head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.cvPreview h1,
+.cvPreview h2 {
+  margin: 0;
+  font-family: Alfa Slab One, sans-serif;
+  font-size: 38px;
+  letter-spacing: 2px;
+}
+.cvPreview .lastName {
+  position: relative;
+  left: 70px;
+}
+.cvPreview .developer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 210px;
+  margin: 20px 0 15px 0;
+  background-color: #f9a01b;
+  color: rgb(0, 0, 0);
+  font-size: 0.9375rem;
+  border-radius: 20px;
+}
+.cvPreview .picture {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  right: 20px;
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  border-radius: 50%;
+}
+.cvPreview .picture img {
+  height: 140px;
+}
+.cvPreview .pitch {
+  font-style: italic;
+}
+.cvPreview hr {
+  margin: 20px 0 20px 0;
+}
+.cvPreview h2 {
+  font-size: 1.625rem;
+}
+.cvPreview .experience,
+.cvPreview .education-skills,
+.cvPreview .skills,
+.cvPreview .contacts,
+.cvPreview .location-mail > div,
+.cvPreview .number-portfolio > div {
+  display: flex;
+}
+.cvPreview .experience {
+  gap: 30px;
+}
+.cvPreview .experience > div {
+  width: max(100%, 302px);
+}
+.cvPreview .experience > div p:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.cvPreview .education,
+.cvPreview .skillsSection {
+  width: 100%;
+}
+.cvPreview .position,
+.cvPreview .universityName {
+  color: #f9a01b;
+}
+.cvPreview .education-skills {
+  margin-top: 15px;
+  gap: 30px;
+}
+.cvPreview .educationSection,
+.cvPreview .skillsSection {
+  width: 302px;
+}
+.cvPreview .skillsSection h2 {
+  margin-bottom: 14px;
+}
+.cvPreview .skills {
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  left: 13px;
+  height: 150px;
+  gap: 25px;
+}
+.cvPreview .skills p {
+  margin: 0;
+  display: list-item;
+}
+.cvPreview .contacts {
+  gap: 30px;
+}
+.cvPreview .location-mail,
+.cvPreview .number-portfolio {
+  display: flex;
+  flex-direction: column;
+  width: 302px;
+  margin: 10px 0 10px 0;
+  gap: 30px;
+}
+.cvPreview .location-mail > div,
+.cvPreview .number-portfolio > div {
+  align-items: center;
+  gap: 10px;
+}
+.cvPreview .location-mail > div p,
+.cvPreview .number-portfolio > div p {
+  word-break: break-all;
+}
+.cvPreview .imgHolder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  background-color: #f9a01b;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.cvPreview img {
+  height: 32px;
+}/*# sourceMappingURL=cv_preview.css.map */
